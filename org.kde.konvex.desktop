@@ -1,0 +1,12 @@
+# SPDX-FileCopyrightText: 2023 Joshua Goins <josh@redstrate.com>
+# SPDX-License-Identifier: CC0-1.0
+
+[Desktop Entry]
+Name=Konvex
+Comment=3D Model Viewer
+Exec=konvex
+Icon=org.kde.konvex
+Type=Application
+Terminal=false
+Categories=Utility;
+
