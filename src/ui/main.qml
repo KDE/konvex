@@ -88,7 +88,7 @@ Kirigami.ApplicationWindow {
                     components: [
                            Render.SceneLoader {
                                 id: sphereMesh
-                                source: Qt.resolvedUrl("file://" + appWindow.currentlyLoadedFile)
+                                source: appWindow.currentlyLoadedFile
 
                                 onStatusChanged: {
                                     if(status == Render.SceneLoader.Ready)
@@ -109,6 +109,17 @@ Kirigami.ApplicationWindow {
                        ]
                 }
             }
+        }
+    }
+
+    DropArea {
+        id: dropArea
+        anchors.fill: parent
+        onEntered: (drag) => {
+            drag.accept(Qt.LinkAction);
+        }
+        onDropped: (drop) => {
+            currentlyLoadedFile = drop.urls[0]
         }
     }
 }

@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
     engine.load(url);
 
     if (parser.positionalArguments().length() > 0) {
-        Q_EMIT controller->fileOpened(parser.positionalArguments()[0]);
+        Q_EMIT controller->fileOpened("file:///" + parser.positionalArguments()[0]);
     }
 
     return app.exec();
