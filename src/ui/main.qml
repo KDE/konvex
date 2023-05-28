@@ -86,6 +86,11 @@ Kirigami.ApplicationWindow {
                            Render.SceneLoader {
                                 id: sphereMesh
                                 source: Qt.resolvedUrl("file://" + appWindow.currentlyLoadedFile)
+
+                                onStatusChanged: {
+                                    if(status == Render.SceneLoader.Ready)
+                                        mainCamera.viewAll()
+                                }
                            }
                        ]
                 }
