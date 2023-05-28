@@ -19,14 +19,21 @@ Kirigami.ApplicationWindow {
     width: 640
     height: 480
     visible: true
-    title: i18nc("@title:window Main window", "Konvex")
+    title: {
+        let base = i18nc("@title:window Main window", "Konvex")
+        if (currentlyLoadedFile.length > 0) {
+            return currentlyLoadedFile + " — " + base
+        } else {
+            return base
+        }
+    }
 
     property string currentlyLoadedFile: ""
 
     Connections {
         target: Controller
         function onFileOpened(path) {
-            currentlyLoadedFile = Qt.resolvedUrl("file://" + path)
+            currentlyLoadedFile = path
         }
     }
 
@@ -77,7 +84,7 @@ Kirigami.ApplicationWindow {
                     components: [
                            Render.SceneLoader {
                                 id: sphereMesh
-                                source: appWindow.currentlyLoadedFile
+                                source: Qt.resolvedUrl("file://" + appWindow.currentlyLoadedFile)
                            }
                        ]
                 }
