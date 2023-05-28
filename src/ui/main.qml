@@ -78,8 +78,15 @@ Kirigami.ApplicationWindow {
 
                 OrbitCameraController {
                     camera: mainCamera
-                    linearSpeed: 5
                     lookSpeed: 180
+
+                    // Qt 3D is weird, and doesn't give us the bounding box of a mesh (WHY?)
+                    // so instead, we will try to guess based on camera distance
+                    linearSpeed: {
+                        let biggestComponent = Math.max(mainCamera.position.x, mainCamera.position.y, mainCamera.position.z);
+
+                        return 10 * biggestComponent;
+                    }
                 }
 
                 Entity {
