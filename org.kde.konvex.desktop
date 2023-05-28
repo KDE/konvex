@@ -9,4 +9,4 @@ Icon=org.kde.konvex
 Type=Application
 Terminal=false
 Categories=Utility;
-
+MimeType=model/obj;model/stl;application/octet-stream;
