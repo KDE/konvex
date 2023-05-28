@@ -40,6 +40,8 @@ Kirigami.ApplicationWindow {
     pageStack.initialPage: Kirigami.Page {
         title: i18nc("@title:window 3D Viewport", "Viewport")
 
+        globalToolBarStyle: Kirigami.ApplicationHeaderStyle.None
+
         padding: 0
 
         Kirigami.PlaceholderMessage {
@@ -59,7 +61,7 @@ Kirigami.ApplicationWindow {
                     Render.RenderSettings {
                         activeFrameGraph: ForwardRenderer {
                             camera: mainCamera
-                            clearColor: "black"
+                            clearColor: "transparent"
                         }
                     },
                     InputSettings {}
