@@ -42,7 +42,6 @@ Kirigami.ApplicationWindow {
             anchors.fill: parent
             aspects: ["input", "logic"]
             cameraAspectRatioMode: Scene3D.AutomaticAspectRatio
-            visible: sphereMesh.status === Render.Mesh.Ready
 
             Entity {
                 components: [
