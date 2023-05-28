@@ -70,6 +70,7 @@ Kirigami.ApplicationWindow {
                     position: Qt.vector3d(10, 10, 10)
                     viewCenter: Qt.vector3d(0, 0, 0)
                     fieldOfView: 60
+                    farPlane: 100000
                 }
 
                 OrbitCameraController {
