@@ -14,15 +14,19 @@ import QtQuick.Layouts 1.15
 import org.kde.kmodelviewer 1.0
 
 Kirigami.ApplicationWindow {
+    id: appWindow
+
     width: 640
     height: 480
     visible: true
     title: i18nc("@title:window Main window", "Konvex")
 
+    property string currentlyLoadedFile: ""
+
     Connections {
         target: Controller
         function onFileOpened(path) {
-            sphereMesh.source = "file://" + path
+            currentlyLoadedFile = Qt.resolvedUrl("file://" + path)
         }
     }
 
@@ -71,14 +75,9 @@ Kirigami.ApplicationWindow {
                     id: sphereObject
 
                     components: [
-                           Transform {
-                               id: transform
-                           },
-                           Render.Mesh {
+                           Render.SceneLoader {
                                 id: sphereMesh
-                           },
-                           PhongMaterial {
-
+                                source: appWindow.currentlyLoadedFile
                            }
                        ]
                 }
