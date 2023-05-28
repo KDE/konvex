@@ -48,11 +48,16 @@ Kirigami.ApplicationWindow {
     pageStack.initialPage: Kirigami.Page {
         title: i18nc("@title:window 3D Viewport", "Viewport")
 
-        globalToolBarStyle: Kirigami.ApplicationHeaderStyle.None
-
         padding: 0
 
         background: null
+
+        actions.main:
+            Kirigami.Action {
+                text: i18nc("@action:intoolbar Re-center the model so it's visible in the viewport", "Re-center")
+                icon.name: "snap-bounding-box-center"
+                onTriggered: mainCamera.viewAll()
+            }
 
         Kirigami.PlaceholderMessage {
             anchors.centerIn: parent
