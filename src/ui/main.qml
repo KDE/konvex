@@ -97,14 +97,11 @@ Kirigami.ApplicationWindow {
 
                 Entity {
                        components: [
-                           Transform {
-                               translation: Qt.vector3d(15, 15, 15)
-                           },
-
-                           Render.PointLight {
+                           Render.DirectionalLight {
                                enabled: true
                                color: "red"
                                intensity: 1.0
+                               worldDirection: Qt.vector3d(0.5, -1, 1)
                            }
                        ]
                 }
