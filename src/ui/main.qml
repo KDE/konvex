@@ -37,12 +37,22 @@ Kirigami.ApplicationWindow {
         }
     }
 
+    color: "transparent"
+
+    background: Rectangle {
+        color: "transparent"
+    }
+
+    Component.onCompleted: Controller.setBlur(pageStack, true)
+
     pageStack.initialPage: Kirigami.Page {
         title: i18nc("@title:window 3D Viewport", "Viewport")
 
         globalToolBarStyle: Kirigami.ApplicationHeaderStyle.None
 
         padding: 0
+
+        background: null
 
         Kirigami.PlaceholderMessage {
             anchors.centerIn: parent

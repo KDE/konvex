@@ -29,7 +29,9 @@ target_link_libraries(konvex PRIVATE
     Qt::3DLogic
     Qt::3DExtras
     Qt::3DAnimation
-    KF5::I18n)
+    KF5::I18n
+    KF5::WindowSystem)
+target_compile_definitions(konvex PRIVATE HAVE_WINDOWSYSTEM)
 
 set_target_properties(konvex PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
@@ -37,7 +39,7 @@ set_target_properties(konvex PROPERTIES
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
     MACOSX_BUNDLE TRUE
     WIN32_EXECUTABLE TRUE
-)
+    )
 
 install(TARGETS konvex
     BUNDLE DESTINATION .
