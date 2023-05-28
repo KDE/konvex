@@ -46,7 +46,8 @@ Kirigami.ApplicationWindow {
 
         Kirigami.PlaceholderMessage {
             anchors.centerIn: parent
-            text: i18nc("@info:placeholder Viewport placeholder", "No model loaded")
+            text: i18nc("@info:placeholder Viewport placeholder, when no model was loaded", "No model loaded")
+            explanation: i18nc("@info:placeholder Viewport placeholder, when no model was loaded", "Open a model with Konvex, or drag a model into this window.")
             visible: sphereMesh.status !== Render.Mesh.Ready
         }
 
