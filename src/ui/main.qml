@@ -52,12 +52,19 @@ Kirigami.ApplicationWindow {
 
         background: null
 
-        actions.main:
-            Kirigami.Action {
-                text: i18nc("@action:intoolbar Re-center the model so it's visible in the viewport", "Re-center")
-                icon.name: "snap-bounding-box-center"
-                onTriggered: mainCamera.viewAll()
-            }
+        actions.main: Kirigami.Action
+        {
+            text: i18nc("@action:intoolbar Re-center the model so it's visible in the viewport", "Re-center")
+            icon.name: "snap-bounding-box-center"
+            onTriggered: mainCamera.viewAll()
+        }
+
+        actions.right: Kirigami.Action
+        {
+            text: i18nc("@action:intoolbar", "Settings")
+            icon.name: "settings-configure"
+            onTriggered: pageStack.layers.push('SettingsPage.qml')
+        }
 
         Kirigami.PlaceholderMessage {
             anchors.centerIn: parent
