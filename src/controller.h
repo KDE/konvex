@@ -15,7 +15,7 @@ public:
 
     Q_INVOKABLE void setBlur(QQuickItem *item, bool blur);
 
-signals:
+Q_SIGNALS:
     void fileOpened(QString path);
 };
 

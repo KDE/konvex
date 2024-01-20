@@ -29,9 +29,9 @@ target_link_libraries(konvex PRIVATE
     Qt::3DLogic
     Qt::3DExtras
     Qt::3DAnimation
-    KF5::I18n
-        KF5::WindowSystem
-        KF5::CoreAddons)
+    KF6::I18n
+    KF6::WindowSystem
+    KF6::CoreAddons)
 target_compile_definitions(konvex PRIVATE HAVE_WINDOWSYSTEM)
 
 set_target_properties(konvex PROPERTIES

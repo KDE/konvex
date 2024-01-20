@@ -14,10 +14,11 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(QT_MIN_VERSION 5.15)
-set(KF5_MIN_VERSION 5.83)
+set(QT_MIN_VERSION 6.5)
+set(KF_MIN_VERSION 5.240)
+set(QT_DEFAULT_MAJOR_VERSION 6) # TODO: remove
 
-find_package(ECM ${KF5_MIN_VERSION} REQUIRED NO_MODULE)
+find_package(ECM ${KF_MIN_VERSION} REQUIRED NO_MODULE)
 
 list(APPEND CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
@@ -31,7 +32,7 @@ include(ECMPoQmTools)
 include(KDEGitCommitHooks)
 include(KDEClangFormat)
 
-find_package(Qt5 ${QT_MIN_VERSION} NO_MODULE REQUIRED COMPONENTS
+find_package(Qt6 ${QT_MIN_VERSION} NO_MODULE REQUIRED COMPONENTS
     Core
     Qml
     QuickControls2
@@ -41,7 +42,7 @@ find_package(Qt5 ${QT_MIN_VERSION} NO_MODULE REQUIRED COMPONENTS
     3DLogic
     3DExtras
     3DAnimation)
-find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 CoreAddons I18n WindowSystem)
+find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 CoreAddons I18n WindowSystem)
 
 add_subdirectory(src)
 
