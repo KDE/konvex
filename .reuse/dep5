@@ -1,0 +1,8 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Konvex
+Upstream-Contact: Joshua Goins <josh@redstrate.com>
+
+Files: README.md misc/screenshot.webp src/qml.qrc
+Copyright: Joshua Goins <josh@redstrate.com>
+License: CC0-1.0
+

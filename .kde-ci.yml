@@ -1,0 +1,11 @@
+# SPDX-FileCopyrightText: 2024 Joshua Goins <josh@redstrate.com>
+# SPDX-License-Identifier: BSD-2-Clause
+
+Dependencies:
+  - 'on': ['Linux', 'FreeBSD', 'Windows']
+    'require':
+      'frameworks/extra-cmake-modules': '@latest-kf6'
+      'frameworks/kcoreaddons': '@latest-kf6'
+      'frameworks/kirigami': '@latest-kf6'
+      'frameworks/ki18n': '@latest-kf6'
+      'frameworks/kwindowsystem': '@latest-kf6'
