@@ -1,10 +1,8 @@
 // SPDX-FileCopyrightText: 2023 Joshua Goins <josh@redstrate.com>
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-#ifndef CONTROLLER_H
-#define CONTROLLER_H
+#pragma once
 
-#include <QObject>
 #include <QQuickItem>
 
 class Controller : public QObject
@@ -21,5 +19,3 @@ public:
 Q_SIGNALS:
     void fileOpened(QString path);
 };
-
-#endif // CONTROLLER_H
