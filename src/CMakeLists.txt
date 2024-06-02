@@ -31,3 +31,5 @@ target_link_libraries(konvex PRIVATE
     KF6::WindowSystem
     KF6::CoreAddons)
 target_compile_definitions(konvex PRIVATE HAVE_WINDOWSYSTEM)
+
+install(TARGETS konvex ${KF6_INSTALL_TARGETS_DEFAULT_ARGS})
