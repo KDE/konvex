@@ -42,7 +42,7 @@ find_package(Qt6 ${QT_MIN_VERSION} NO_MODULE REQUIRED COMPONENTS
     3DLogic
     3DExtras
     3DAnimation)
-find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 CoreAddons I18n WindowSystem)
+find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami CoreAddons I18n WindowSystem)
 
 add_subdirectory(src)
 
