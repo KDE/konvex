@@ -11,7 +11,7 @@ import Qt3D.Extras 2.15
 import org.kde.kirigami 2.20 as Kirigami
 import QtQuick.Controls 2.15 as Controls
 import QtQuick.Layouts 1.15
-import org.kde.kmodelviewer 1.0
+import org.kde.konvex 1.0
 
 Kirigami.ApplicationWindow {
     id: appWindow

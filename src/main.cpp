@@ -5,7 +5,6 @@
 #include <KLocalizedContext>
 #include <KLocalizedString>
 #include <QCommandLineParser>
-#include <QGuiApplication>
 #include <QIcon>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
@@ -15,9 +14,6 @@
 
 int main(int argc, char *argv[])
 {
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
-#endif
     QGuiApplication app(argc, argv);
 
     // workaround QTBUG-83871 where hiding the scene freezes the application
@@ -46,10 +42,6 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
 
-    auto controller = new Controller();
-
-    qmlRegisterSingletonInstance("org.kde.kmodelviewer", 1, 0, "Controller", controller);
-
     QCommandLineParser parser;
     parser.setApplicationDescription(i18nc("Application Description", "3D Model Viewer"));
     parser.addPositionalArgument(QStringLiteral("urls"), i18nc("@info:shell", "Model file"));
@@ -62,6 +54,7 @@ int main(int argc, char *argv[])
     engine.loadFromModule(QStringLiteral("org.kde.konvex"), QStringLiteral("Main"));
 
     if (parser.positionalArguments().length() > 0) {
+        auto controller = engine.singletonInstance<Controller *>(QStringLiteral("org.kde.konvex"), QStringLiteral("Controller"));
         Q_EMIT controller->fileOpened(QStringLiteral("file:///%1").arg(parser.positionalArguments()[0]));
     }
 
