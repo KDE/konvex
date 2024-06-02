@@ -59,17 +59,7 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
     KLocalizedString::setApplicationDomain("konvex");
 
-    const QUrl url(QStringLiteral("qrc:/ui/main.qml"));
-    QObject::connect(
-        &engine,
-        &QQmlApplicationEngine::objectCreated,
-        &app,
-        [url](QObject *obj, const QUrl &objUrl) {
-            if (!obj && url == objUrl)
-                QCoreApplication::exit(-1);
-        },
-        Qt::QueuedConnection);
-    engine.load(url);
+    engine.loadFromModule(QStringLiteral("org.kde.konvex"), QStringLiteral("Main"));
 
     if (parser.positionalArguments().length() > 0) {
         Q_EMIT controller->fileOpened(QStringLiteral("file:///%1").arg(parser.positionalArguments()[0]));

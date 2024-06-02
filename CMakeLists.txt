@@ -30,6 +30,7 @@ include(ECMGenerateHeaders)
 include(ECMPoQmTools)
 include(KDEGitCommitHooks)
 include(KDEClangFormat)
+include(ECMQmlModule)
 
 find_package(Qt6 ${QT_MIN_VERSION} NO_MODULE REQUIRED COMPONENTS
     Core
