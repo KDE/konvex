@@ -49,9 +49,6 @@ int main(int argc, char *argv[])
     auto controller = new Controller();
 
     qmlRegisterSingletonInstance("org.kde.kmodelviewer", 1, 0, "Controller", controller);
-    qmlRegisterSingletonType("org.kde.kmodelviewer", 1, 0, "About", [](QQmlEngine *engine, QJSEngine *) -> QJSValue {
-        return engine->toScriptValue(KAboutData::applicationData());
-    });
 
     QCommandLineParser parser;
     parser.setApplicationDescription(i18nc("Application Description", "3D Model Viewer"));

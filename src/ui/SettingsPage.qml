@@ -21,7 +21,6 @@ FormCard.FormCardPage {
         Component {
             id: aboutPage
             FormCard.AboutPage {
-                aboutData: About
             }
         }
         Component {
