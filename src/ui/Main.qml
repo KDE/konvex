@@ -1,17 +1,17 @@
 // SPDX-FileCopyrightText: 2023 Joshua Goins <josh@redstrate.com>
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-import QtQuick 2.15
-import QtQuick.Window 2.15
-import QtQuick.Scene3D 2.15
-import Qt3D.Core 2.15
-import Qt3D.Render 2.15 as Render
-import Qt3D.Input 2.15
-import Qt3D.Extras 2.15
-import org.kde.kirigami 2.20 as Kirigami
-import QtQuick.Controls 2.15 as Controls
-import QtQuick.Layouts 1.15
-import org.kde.konvex 1.0
+import QtQuick
+import QtQuick.Window
+import QtQuick.Scene3D
+import Qt3D.Core
+import Qt3D.Render as Render
+import Qt3D.Input
+import Qt3D.Extras
+import org.kde.kirigami as Kirigami
+import QtQuick.Controls as Controls
+import QtQuick.Layouts
+import org.kde.konvex
 
 Kirigami.ApplicationWindow {
     id: appWindow
