@@ -128,7 +128,7 @@ Kirigami.ApplicationWindow {
                        components: [
                            Render.DirectionalLight {
                                enabled: true
-                               color: "red"
+                               color: "white"
                                intensity: 1.0
                                worldDirection: Qt.vector3d(0.5, -1, 1)
                            }
