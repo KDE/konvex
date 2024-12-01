@@ -46,8 +46,6 @@ Kirigami.ApplicationWindow {
     Component.onCompleted: Controller.setBlur(pageStack, true)
 
     pageStack.initialPage: Kirigami.Page {
-        title: i18nc("@title:window 3D Viewport", "Viewport")
-
         padding: 0
 
         background: null
