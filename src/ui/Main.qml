@@ -3,11 +3,9 @@
 
 import QtQuick
 import QtQuick.Window
-import QtQuick.Scene3D
-import Qt3D.Core
-import Qt3D.Render as Render
-import Qt3D.Input
-import Qt3D.Extras
+import QtQuick
+import QtQuick3D
+import QtQuick3D.Helpers
 import org.kde.kirigami as Kirigami
 import QtQuick.Controls as Controls
 import QtQuick.Layouts
@@ -67,73 +65,47 @@ Kirigami.ApplicationWindow {
             anchors.centerIn: parent
             text: i18nc("@info:placeholder Viewport placeholder, when no model was loaded", "No model loaded")
             explanation: i18nc("@info:placeholder Viewport placeholder, when no model was loaded", "Open a model with Konvex, or drag a model into this window.")
-            visible: sphereMesh.status !== Render.Mesh.Ready
+            visible: !model.geometry
         }
 
-        Scene3D {
-            id: scene3d
+    View3D {
             anchors.fill: parent
-            aspects: ["input", "logic"]
-            cameraAspectRatioMode: Scene3D.AutomaticAspectRatio
 
-            Entity {
-                components: [
-                    Render.RenderSettings {
-                        activeFrameGraph: ForwardRenderer {
-                            camera: mainCamera
-                            clearColor: "transparent"
-                        }
-                    },
-                    InputSettings {}
-                ]
+        environment.backgroundMode: SceneEnvironment.Transparent
+        environment.lightProbe: Texture {
+            textureData: ProceduralSkyTextureData {
+            }
+        }
 
-                Render.Camera {
+        Node {
+            id: cameraNode
+            PerspectiveCamera {
                     id: mainCamera
-                    position: Qt.vector3d(10, 10, 10)
-                    viewCenter: Qt.vector3d(0, 0, 0)
+                z: 10
                     fieldOfView: 60
-                    farPlane: 100000
+                clipFar: 100000
+                clipNear: 1
                 }
+        }
 
-                OrbitCameraController {
-                    camera: mainCamera
-                    lookSpeed: 180
+        OrbitCameraController {
+            anchors.fill: parent
+            origin: cameraNode
+            camera: mainCamera
+        }
 
-                    // Qt 3D is weird, and doesn't give us the bounding box of a mesh (WHY?)
-                    // so instead, we will try to guess based on camera distance
-                    linearSpeed: {
-                        let biggestComponent = Math.max(mainCamera.position.x, mainCamera.position.y, mainCamera.position.z);
+        Model {
+            id: model
 
-                        return 10 * biggestComponent;
-                    }
+            geometry: Controller.createGeometry(currentlyLoadedFile, model)
+
+            materials: [
+                PrincipledMaterial {
+                    baseColor: "red"
+                    metalness: 0.0
+                    roughness: 0.1
                 }
-
-                Entity {
-                    id: sphereObject
-
-                    components: [
-                           Render.SceneLoader {
-                                id: sphereMesh
-                                source: appWindow.currentlyLoadedFile
-
-                                onStatusChanged: {
-                                    if(status == Render.SceneLoader.Ready)
-                                        mainCamera.viewAll()
-                                }
-                           }
-                       ]
-                }
-
-                Entity {
-                       components: [
-                           Render.DirectionalLight {
-                               enabled: true
-                               color: "white"
-                               intensity: 1.0
-                               worldDirection: Qt.vector3d(0.5, -1, 1)
-                           }
-                       ]
-                }
+            ]
             }
         }
     }

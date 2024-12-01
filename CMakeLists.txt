@@ -31,6 +31,7 @@ include(ECMPoQmTools)
 include(KDEGitCommitHooks)
 include(KDEClangFormat)
 include(ECMQmlModule)
+include(ECMGenerateExportHeader)
 
 find_package(Qt6 ${QT_MIN_VERSION} NO_MODULE REQUIRED COMPONENTS
     Core
@@ -41,7 +42,8 @@ find_package(Qt6 ${QT_MIN_VERSION} NO_MODULE REQUIRED COMPONENTS
     3DInput
     3DLogic
     3DExtras
-    3DAnimation)
+        3DAnimation
+        Quick3D)
 find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami CoreAddons I18n WindowSystem)
 
 add_subdirectory(src)

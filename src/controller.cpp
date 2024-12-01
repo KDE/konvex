@@ -3,6 +3,10 @@
 
 #include "controller.h"
 
+#include "konvexplugininterface.h"
+
+#include <KPluginFactory>
+
 #ifdef HAVE_WINDOWSYSTEM
 #include <KWindowEffects>
 #include <QQuickWindow>
@@ -28,4 +32,26 @@ void Controller::setBlur(QQuickItem *item, bool blur)
     connect(item->window(), &QQuickWindow::widthChanged, this, setWindows);
     setWindows();
 #endif
+}
+
+QQuick3DGeometry *Controller::createGeometry(const QUrl &url, QQuick3DObject *parent)
+{
+    if (url.isEmpty()) {
+        return nullptr;
+    }
+
+    auto plugins = KPluginMetaData::findPlugins(QStringLiteral("kf6/konvex"), [](const KPluginMetaData &) {
+        return true;
+    });
+    if (plugins.empty()) {
+        qWarning() << "No plugins found.";
+        return nullptr;
+    }
+
+    if (auto result = KPluginFactory::instantiatePlugin<KonvexPluginInterface>(plugins.first(), this, QVariantList())) {
+        return result.plugin->createGeometry(url.toLocalFile(), parent);
+    } else {
+        qWarning() << result.errorString;
+        return nullptr;
+    }
 }

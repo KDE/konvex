@@ -1,6 +1,8 @@
 # SPDX-FileCopyrightText: 2023 Joshua Goins <josh@redstrate.com>
 # SPDX-License-Identifier: BSD-2-Clause
 
+add_compile_options(-fPIC)
+
 add_executable(konvex)
 
 ecm_add_qml_module(konvex
@@ -27,9 +29,14 @@ target_link_libraries(konvex PRIVATE
     Qt::3DLogic
     Qt::3DExtras
     Qt::3DAnimation
+        Qt6::Quick3D
     KF6::I18n
     KF6::WindowSystem
-    KF6::CoreAddons)
+        KF6::CoreAddons
+        konvex-interface)
 target_compile_definitions(konvex PRIVATE HAVE_WINDOWSYSTEM)
 
 install(TARGETS konvex ${KF6_INSTALL_TARGETS_DEFAULT_ARGS})
+
+add_subdirectory(core)
+add_subdirectory(plugins)

@@ -3,6 +3,7 @@
 
 #pragma once
 
+#include <QQuick3DGeometry>
 #include <QQuickItem>
 
 class Controller : public QObject
@@ -15,6 +16,8 @@ public:
     explicit Controller(QObject *parent = nullptr);
 
     Q_INVOKABLE void setBlur(QQuickItem *item, bool blur);
+
+    Q_INVOKABLE QQuick3DGeometry *createGeometry(const QUrl &url, QQuick3DObject *parent);
 
 Q_SIGNALS:
     void fileOpened(QString path);
