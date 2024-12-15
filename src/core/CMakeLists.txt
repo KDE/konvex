@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2024 Joshua Goins <josh@redstrate.com>
+# SPDX-License-Identifier: BSD-2-Clause
+
 add_library(konvex-interface SHARED)
 target_sources(konvex-interface PRIVATE
         konvexplugininterface.h

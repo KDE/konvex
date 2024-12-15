@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2024 Joshua Goins <josh@redstrate.com>
+# SPDX-License-Identifier: BSD-2-Clause
+
 function(add_konvex_plugin name)
     kcoreaddons_add_plugin(${name} SOURCES ${ARGN} INSTALL_NAMESPACE "kf6/konvex")
     target_link_libraries(${name} PRIVATE Qt6::Core konvex-interface)
