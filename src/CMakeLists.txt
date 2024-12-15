@@ -23,13 +23,7 @@ target_link_libraries(konvex PRIVATE
     Qt::Qml
     Qt::Quick
     Qt::QuickControls2
-    Qt::3DCore
-    Qt::3DRender
-    Qt::3DInput
-    Qt::3DLogic
-    Qt::3DExtras
-    Qt::3DAnimation
-        Qt6::Quick3D
+    Qt6::Quick3D
     KF6::I18n
     KF6::WindowSystem
         KF6::CoreAddons
