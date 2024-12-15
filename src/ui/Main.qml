@@ -9,6 +9,7 @@ import QtQuick3D.Helpers
 import org.kde.kirigami as Kirigami
 import QtQuick.Controls as Controls
 import QtQuick.Layouts
+import QtQuick.Dialogs
 import org.kde.konvex
 
 Kirigami.ApplicationWindow {
@@ -18,7 +19,7 @@ Kirigami.ApplicationWindow {
     height: 480
     visible: true
     title: {
-        let base = i18nc("@title:window Main window", "Konvex")
+        const base = i18nc("@title:window Main window", "Konvex")
         if (currentlyLoadedFile.length > 0) {
             return currentlyLoadedFile + " — " + base
         } else {
@@ -30,7 +31,7 @@ Kirigami.ApplicationWindow {
 
     Connections {
         target: Controller
-        function onFileOpened(path) {
+        function onFileOpened(path: string): void {
             currentlyLoadedFile = path
         }
     }
@@ -38,10 +39,16 @@ Kirigami.ApplicationWindow {
     color: "transparent"
 
     background: Rectangle {
-        color: "transparent"
+        color: currentlyLoadedFile.length === 0 ? Kirigami.Theme.backgroundColor : "transparent"
     }
 
     Component.onCompleted: Controller.setBlur(pageStack, true)
+
+    FileDialog {
+        id: openFile
+
+        onAccepted: currentlyLoadedFile = selectedFile
+    }
 
     pageStack.initialPage: Kirigami.Page {
         padding: 0
@@ -66,46 +73,55 @@ Kirigami.ApplicationWindow {
             text: i18nc("@info:placeholder Viewport placeholder, when no model was loaded", "No model loaded")
             explanation: i18nc("@info:placeholder Viewport placeholder, when no model was loaded", "Open a model with Konvex, or drag a model into this window.")
             visible: !model.geometry
-        }
-
-    View3D {
-            anchors.fill: parent
-
-        environment.backgroundMode: SceneEnvironment.Transparent
-        environment.lightProbe: Texture {
-            textureData: ProceduralSkyTextureData {
+            helpfulAction: Kirigami.Action {
+                text: i18nc("@action:button", "Select File")
+                icon.name: "document-open-data-symbolic"
+                onTriggered: {
+                    openFile.open();
+                }
             }
         }
 
-        Node {
-            id: cameraNode
-            PerspectiveCamera {
-                    id: mainCamera
-                z: 10
-                    fieldOfView: 60
-                clipFar: 100000
-                clipNear: 1
-                }
-        }
-
-        OrbitCameraController {
+        View3D {
             anchors.fill: parent
-            origin: cameraNode
-            camera: mainCamera
-        }
+            visible: model.geometry
 
-        Model {
-            id: model
-
-            geometry: Controller.createGeometry(currentlyLoadedFile, model)
-
-            materials: [
-                PrincipledMaterial {
-                    baseColor: "red"
-                    metalness: 0.0
-                    roughness: 0.1
+            environment {
+                backgroundMode: SceneEnvironment.Transparent
+                lightProbe: Texture {
+                    textureData: ProceduralSkyTextureData {}
                 }
-            ]
+            }
+
+            Node {
+                id: cameraNode
+                PerspectiveCamera {
+                    id: mainCamera
+                    z: 10
+                    fieldOfView: 60
+                    clipFar: 100000
+                    clipNear: 1
+                }
+            }
+
+            OrbitCameraController {
+                anchors.fill: parent
+                origin: cameraNode
+                camera: mainCamera
+            }
+
+            Model {
+                id: model
+
+                geometry: Controller.createGeometry(currentlyLoadedFile, model);
+
+                materials: [
+                    PrincipledMaterial {
+                        baseColor: "red"
+                        metalness: 0.0
+                        roughness: 0.1
+                    }
+                ]
             }
         }
     }
