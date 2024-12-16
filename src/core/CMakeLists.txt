@@ -10,3 +10,5 @@ target_link_libraries(konvex-interface PUBLIC
         Qt6::Quick3D)
 
 generate_export_header(konvex-interface EXPORT_FILE_NAME konvex_export.h BASE_NAME KonvexInterface)
+
+install(TARGETS konvex-interface ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
