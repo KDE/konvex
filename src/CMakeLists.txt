@@ -25,9 +25,10 @@ target_link_libraries(konvex PRIVATE
     Qt::QuickControls2
     Qt6::Quick3D
     KF6::I18n
+    KF6::I18nQml
     KF6::WindowSystem
-        KF6::CoreAddons
-        konvex-interface)
+    KF6::CoreAddons
+    konvex-interface)
 target_compile_definitions(konvex PRIVATE HAVE_WINDOWSYSTEM)
 
 install(TARGETS konvex ${KF6_INSTALL_TARGETS_DEFAULT_ARGS})

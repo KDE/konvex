@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 #include <KAboutData>
-#include <KLocalizedContext>
+#include <KLocalizedQmlContext>
 #include <KLocalizedString>
 #include <QCommandLineParser>
 #include <QIcon>
@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
 
     parser.process(app);
 
-    engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
+    KLocalization::setupLocalizedContext(&engine);
     KLocalizedString::setApplicationDomain("konvex");
 
     engine.loadFromModule(QStringLiteral("org.kde.konvex"), QStringLiteral("Main"));
