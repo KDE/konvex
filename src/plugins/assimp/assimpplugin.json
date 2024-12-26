@@ -1,16 +1,16 @@
 {
-  "KPlugin": {
-    "Authors": [
-      {
-        "Name": "Joshua Goins"
-      }
-    ],
-    "Category": "Utilities",
-    "Description": "Loads most model files",
-    "License": "LGPL",
-    "Name": "Assimp"
-  },
-  "X-Konvex-SupportedExtensions": [
-    "obj"
-  ]
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Joshua Goins"
+            }
+        ],
+        "Category": "Utilities",
+        "Description": "Loads most model files",
+        "License": "LGPL",
+        "Name": "Assimp"
+    },
+    "X-Konvex-SupportedExtensions": [
+        "obj"
+    ]
 }
