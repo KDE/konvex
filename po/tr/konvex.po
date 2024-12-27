@@ -1,0 +1,119 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the konvex package.
+#
+# SPDX-FileCopyrightText: 2024 Emir SARI <emir_sari@icloud.com>
+msgid ""
+msgstr ""
+"Project-Id-Version: konvex\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-12-26 00:39+0000\n"
+"PO-Revision-Date: 2024-12-26 14:23+0300\n"
+"Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
+"Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 25.03.70\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Emir SARI"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "emir_sari@icloud.com"
+
+#: src/main.cpp:31
+#, kde-format
+msgid "Konvex"
+msgstr "Konveks"
+
+#: src/main.cpp:33
+#, kde-format
+msgid "3D Model Viewer"
+msgstr "3B Model Görüntüleyicisi"
+
+#: src/main.cpp:35
+#, kde-format
+msgid "© 2023 Joshua Goins"
+msgstr "© 2023 Joshua Goins"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "Joshua Goins"
+msgstr "Joshua Goins"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "Maintainer"
+msgstr "Bakımcı"
+
+#: src/main.cpp:46
+#, kde-format
+msgctxt "Application Description"
+msgid "3D Model Viewer"
+msgstr "3B Model Görüntüleyicisi"
+
+#: src/main.cpp:47
+#, kde-format
+msgctxt "@info:shell"
+msgid "Model file"
+msgstr "Model dosyası"
+
+#: src/ui/Main.qml:22
+#, kde-format
+msgctxt "@title:window Main window"
+msgid "Konvex"
+msgstr "Konveks"
+
+#: src/ui/Main.qml:60
+#, kde-format
+msgctxt "@action:intoolbar Re-center the model so it's visible in the viewport"
+msgid "Re-center"
+msgstr "Yeniden Ortala"
+
+#: src/ui/Main.qml:65
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: src/ui/Main.qml:73
+#, kde-format
+msgctxt "@info:placeholder Viewport placeholder, when no model was loaded"
+msgid "No model loaded"
+msgstr "Yüklü model yok"
+
+#: src/ui/Main.qml:74
+#, kde-format
+msgctxt "@info:placeholder Viewport placeholder, when no model was loaded"
+msgid "Open a model with Konvex, or drag a model into this window."
+msgstr "Bir modeli Konveks ile açın veya bu pencereye sürükleyin."
+
+#: src/ui/Main.qml:77
+#, kde-format
+msgctxt "@action:button"
+msgid "Select File"
+msgstr "Dosya Seç"
+
+#: src/ui/SettingsPage.qml:15
+#, kde-format
+msgctxt "@title:window"
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: src/ui/SettingsPage.qml:33
+#, kde-format
+msgctxt "@action:button"
+msgid "About Konvex"
+msgstr "Konveks Hakkında"
+
+#: src/ui/SettingsPage.qml:42
+#, kde-format
+msgctxt "@action:button"
+msgid "About KDE"
+msgstr "KDE Hakkında"
