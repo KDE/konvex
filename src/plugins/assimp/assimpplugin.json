@@ -2,13 +2,34 @@
     "KPlugin": {
         "Authors": [
             {
-                "Name": "Joshua Goins"
+                "Name": "Joshua Goins",
+                "Name[ca]": "Joshua Goins",
+                "Name[es]": "Joshua Goins",
+                "Name[eu]": "Joshua Goins",
+                "Name[nl]": "Joshua Goins",
+                "Name[tr]": "Joshua Goins",
+                "Name[uk]": "Joshua Goins",
+                "Name[x-test]": "xxJoshua Goinsxx"
             }
         ],
         "Category": "Utilities",
         "Description": "Loads most model files",
+        "Description[ca]": "Carrega la majoria de fitxers de models",
+        "Description[es]": "Carga la mayoría de archivos de modelos",
+        "Description[eu]": "Eredu-fitxategi gehienak zamatzen ditu",
+        "Description[nl]": "Laad de meeste modelbestanden",
+        "Description[tr]": "Çoğu model dosyasını yükleyin",
+        "Description[uk]": "Завантаження більшості файлів моделей",
+        "Description[x-test]": "xxLoads most model filesxx",
         "License": "LGPL",
-        "Name": "Assimp"
+        "Name": "Assimp",
+        "Name[ca]": "Assimp",
+        "Name[es]": "Assimp",
+        "Name[eu]": "Assimp",
+        "Name[nl]": "Assimp",
+        "Name[tr]": "Assimp",
+        "Name[uk]": "Assimp",
+        "Name[x-test]": "xxAssimpxx"
     },
     "X-Konvex-SupportedExtensions": [
         "obj"

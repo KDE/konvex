@@ -3,7 +3,21 @@
 
 [Desktop Entry]
 Name=Konvex
+Name[ca]=Konvex
+Name[es]=Konvex
+Name[eu]=Konvex
+Name[nl]=Konvex
+Name[tr]=Konveks
+Name[uk]=Конвекс
+Name[x-test]=xxKonvexxx
 Comment=3D Model Viewer
+Comment[ca]=Visualitzador de models 3D
+Comment[es]=Visor de modelos 3D
+Comment[eu]=3D eredu erakuslea
+Comment[nl]=Viewer van 3D-model
+Comment[tr]=3B model görüntüleyicisi
+Comment[uk]=Переглядач просторових моделей
+Comment[x-test]=xx3D Model Viewerxx
 Exec=konvex
 Icon=shape-cuboid
 Type=Application
