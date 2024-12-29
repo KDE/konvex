@@ -4,9 +4,12 @@
 [Desktop Entry]
 Name=Konvex
 Name[ca]=Konvex
+Name[ca@valencia]=Konvex
 Name[es]=Konvex
 Name[eu]=Konvex
+Name[fr]=Konvex
 Name[gl]=Konvex
+Name[he]=Konvex
 Name[ia]=Konvex
 Name[ka]=Konvex
 Name[nl]=Konvex
@@ -16,9 +19,12 @@ Name[uk]=Конвекс
 Name[x-test]=xxKonvexxx
 Comment=3D Model Viewer
 Comment[ca]=Visualitzador de models 3D
+Comment[ca@valencia]=Visor de models en 3D
 Comment[es]=Visor de modelos 3D
 Comment[eu]=3D eredu erakuslea
+Comment[fr]=Afficheur de modèles 3D
 Comment[gl]=Visor de modelos 3D.
+Comment[he]=מציג דגמים תלת־ממדיים
 Comment[ia]=Visor de modello de 3D
 Comment[ka]=3D მოდელების დათვალიერება
 Comment[nl]=Viewer van 3D-model
