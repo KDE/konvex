@@ -5,6 +5,7 @@
 Name=Konvex
 Name[ca]=Konvex
 Name[ca@valencia]=Konvex
+Name[eo]=Konvex
 Name[es]=Konvex
 Name[eu]=Konvex
 Name[fr]=Konvex
@@ -21,6 +22,7 @@ Name[x-test]=xxKonvexxx
 Comment=3D Model Viewer
 Comment[ca]=Visualitzador de models 3D
 Comment[ca@valencia]=Visor de models en 3D
+Comment[eo]=3D-Modela Vido
 Comment[es]=Visor de modelos 3D
 Comment[eu]=3D eredu erakuslea
 Comment[fr]=Afficheur de modèles 3D
