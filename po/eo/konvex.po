@@ -1,0 +1,120 @@
+# translation of konvex.pot to Esperanto
+# Copyright (C) 2024 Free Software Foundation, Inc.
+# This file is distributed under the same license as the konvex package.
+# Oliver Kellogg <olivermkellogg@gmail.com>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: konvex\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-12-26 00:39+0000\n"
+"PO-Revision-Date: 2024-12-31 11:42+0100\n"
+"Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
+"Language-Team: Esperanto <kde-i18n-doc@kde.org>\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: translate-po (https://github.com/zcribe/translate-po)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Oliver Kellogg"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "olivermkellogg@gmail.com"
+
+#: src/main.cpp:31
+#, kde-format
+msgid "Konvex"
+msgstr "Konvex"
+
+#: src/main.cpp:33
+#, kde-format
+msgid "3D Model Viewer"
+msgstr "3D-Modela Rigardilo"
+
+#: src/main.cpp:35
+#, kde-format
+msgid "© 2023 Joshua Goins"
+msgstr "© 2023 Joshua Goins"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "Joshua Goins"
+msgstr "Josuo Goins"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "Maintainer"
+msgstr "Prizorganto"
+
+#: src/main.cpp:46
+#, kde-format
+msgctxt "Application Description"
+msgid "3D Model Viewer"
+msgstr "3D-Modela Rigardilo"
+
+#: src/main.cpp:47
+#, kde-format
+msgctxt "@info:shell"
+msgid "Model file"
+msgstr "Modeldosiero"
+
+#: src/ui/Main.qml:22
+#, kde-format
+msgctxt "@title:window Main window"
+msgid "Konvex"
+msgstr "Konvex"
+
+#: src/ui/Main.qml:60
+#, kde-format
+msgctxt "@action:intoolbar Re-center the model so it's visible in the viewport"
+msgid "Re-center"
+msgstr "Recentrigi"
+
+#: src/ui/Main.qml:65
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "Settings"
+msgstr "Agordoj"
+
+#: src/ui/Main.qml:73
+#, kde-format
+msgctxt "@info:placeholder Viewport placeholder, when no model was loaded"
+msgid "No model loaded"
+msgstr "Neniu modelo ŝargita"
+
+#: src/ui/Main.qml:74
+#, kde-format
+msgctxt "@info:placeholder Viewport placeholder, when no model was loaded"
+msgid "Open a model with Konvex, or drag a model into this window."
+msgstr "Malfermu modelon per Konvex, aŭ trenu modelon en ĉi tiun fenestron."
+
+#: src/ui/Main.qml:77
+#, kde-format
+msgctxt "@action:button"
+msgid "Select File"
+msgstr "Elekti Dosieron"
+
+#: src/ui/SettingsPage.qml:15
+#, kde-format
+msgctxt "@title:window"
+msgid "Settings"
+msgstr "Agordoj"
+
+#: src/ui/SettingsPage.qml:33
+#, kde-format
+msgctxt "@action:button"
+msgid "About Konvex"
+msgstr "Pri Konvex"
+
+#: src/ui/SettingsPage.qml:42
+#, kde-format
+msgctxt "@action:button"
+msgid "About KDE"
+msgstr "Pri KDE"
