@@ -17,6 +17,7 @@
                 "Name[nl]": "Joshua Goins",
                 "Name[sa]": "जोशुआ गोइन्स",
                 "Name[sl]": "Joshua Goins",
+                "Name[sv]": "Joshua Goins",
                 "Name[tr]": "Joshua Goins",
                 "Name[uk]": "Joshua Goins",
                 "Name[x-test]": "xxJoshua Goinsxx"
@@ -38,6 +39,7 @@
         "Description[nl]": "Laad de meeste modelbestanden",
         "Description[sa]": "अधिकांशं मॉडल् सञ्चिकाः लोड् करोति",
         "Description[sl]": "Naloži večino datotek modelov",
+        "Description[sv]": "Läser in de flesta modellfiler",
         "Description[tr]": "Çoğu model dosyasını yükleyin",
         "Description[uk]": "Завантаження більшості файлів моделей",
         "Description[x-test]": "xxLoads most model filesxx",
@@ -57,6 +59,7 @@
         "Name[nl]": "Assimp",
         "Name[sa]": "अस्सिम्प",
         "Name[sl]": "Assimp",
+        "Name[sv]": "Assimp",
         "Name[tr]": "Assimp",
         "Name[uk]": "Assimp",
         "Name[x-test]": "xxAssimpxx"
