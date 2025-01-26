@@ -15,12 +15,14 @@
                 "Name[it]": "Joshua Goins",
                 "Name[ka]": "ჯოშუა გოინსი",
                 "Name[nl]": "Joshua Goins",
+                "Name[pl]": "Joshua Goins",
                 "Name[sa]": "जोशुआ गोइन्स",
                 "Name[sl]": "Joshua Goins",
                 "Name[sv]": "Joshua Goins",
                 "Name[tr]": "Joshua Goins",
                 "Name[uk]": "Joshua Goins",
-                "Name[x-test]": "xxJoshua Goinsxx"
+                "Name[x-test]": "xxJoshua Goinsxx",
+                "Name[zh_TW]": "Joshua Goins"
             }
         ],
         "Category": "Utilities",
@@ -37,12 +39,14 @@
         "Description[it]": "Carica la maggior parte dei file modello",
         "Description[ka]": "ჩატვირთავს მოდელის ფაილების უმრავლესობას",
         "Description[nl]": "Laad de meeste modelbestanden",
+        "Description[pl]": "Wczytuje większość plików modeli",
         "Description[sa]": "अधिकांशं मॉडल् सञ्चिकाः लोड् करोति",
         "Description[sl]": "Naloži večino datotek modelov",
         "Description[sv]": "Läser in de flesta modellfiler",
         "Description[tr]": "Çoğu model dosyasını yükleyin",
         "Description[uk]": "Завантаження більшості файлів моделей",
         "Description[x-test]": "xxLoads most model filesxx",
+        "Description[zh_TW]": "能夠載入大部分的模型檔案",
         "License": "LGPL",
         "Name": "Assimp",
         "Name[ca@valencia]": "Assimp",
@@ -57,12 +61,14 @@
         "Name[it]": "Assimp",
         "Name[ka]": "Assimp",
         "Name[nl]": "Assimp",
+        "Name[pl]": "Assimp",
         "Name[sa]": "अस्सिम्प",
         "Name[sl]": "Assimp",
         "Name[sv]": "Assimp",
         "Name[tr]": "Assimp",
         "Name[uk]": "Assimp",
-        "Name[x-test]": "xxAssimpxx"
+        "Name[x-test]": "xxAssimpxx",
+        "Name[zh_TW]": "Assimp"
     },
     "X-Konvex-SupportedExtensions": [
         "obj"
