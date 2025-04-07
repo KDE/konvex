@@ -1,0 +1,119 @@
+# Copyright (C) 2025 This file is copyright:
+# This file is distributed under the same license as the konvex package.
+# SPDX-FileCopyrightText: 2025 Shinjo Park <kde@peremen.name>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: konvex\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-12-26 00:39+0000\n"
+"PO-Revision-Date: 2025-04-06 23:23+0200\n"
+"Last-Translator: Shinjo Park <kde@peremen.name>\n"
+"Language-Team: Korean <kde-kr@kde.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 23.08.5\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "박신조"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kde@peremen.name"
+
+#: src/main.cpp:31
+#, kde-format
+msgid "Konvex"
+msgstr "Konvex"
+
+#: src/main.cpp:33
+#, kde-format
+msgid "3D Model Viewer"
+msgstr "3D 모델 뷰어"
+
+#: src/main.cpp:35
+#, kde-format
+msgid "© 2023 Joshua Goins"
+msgstr "© 2023 Joshua Goins"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "Joshua Goins"
+msgstr "Joshua Goins"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "Maintainer"
+msgstr "관리자"
+
+#: src/main.cpp:46
+#, kde-format
+msgctxt "Application Description"
+msgid "3D Model Viewer"
+msgstr "3D 모델 뷰어"
+
+#: src/main.cpp:47
+#, kde-format
+msgctxt "@info:shell"
+msgid "Model file"
+msgstr "모델 파일"
+
+#: src/ui/Main.qml:22
+#, kde-format
+msgctxt "@title:window Main window"
+msgid "Konvex"
+msgstr "Konvex"
+
+#: src/ui/Main.qml:60
+#, kde-format
+msgctxt "@action:intoolbar Re-center the model so it's visible in the viewport"
+msgid "Re-center"
+msgstr "중심점 재설정"
+
+#: src/ui/Main.qml:65
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "Settings"
+msgstr "설정"
+
+#: src/ui/Main.qml:73
+#, kde-format
+msgctxt "@info:placeholder Viewport placeholder, when no model was loaded"
+msgid "No model loaded"
+msgstr "불러온 모델 없음"
+
+#: src/ui/Main.qml:74
+#, kde-format
+msgctxt "@info:placeholder Viewport placeholder, when no model was loaded"
+msgid "Open a model with Konvex, or drag a model into this window."
+msgstr "Konvex로 모델을 불러오려면 열거나 이 창으로 드래그하십시오."
+
+#: src/ui/Main.qml:77
+#, kde-format
+msgctxt "@action:button"
+msgid "Select File"
+msgstr "파일 선택"
+
+#: src/ui/SettingsPage.qml:15
+#, kde-format
+msgctxt "@title:window"
+msgid "Settings"
+msgstr "설정"
+
+#: src/ui/SettingsPage.qml:33
+#, kde-format
+msgctxt "@action:button"
+msgid "About Konvex"
+msgstr "Konvex 정보"
+
+#: src/ui/SettingsPage.qml:42
+#, kde-format
+msgctxt "@action:button"
+msgid "About KDE"
+msgstr "KDE 정보"
