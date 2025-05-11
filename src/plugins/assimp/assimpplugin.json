@@ -3,6 +3,7 @@
         "Authors": [
             {
                 "Name": "Joshua Goins",
+                "Name[ar]": "جوشوا جوينز",
                 "Name[ca@valencia]": "Joshua Goins",
                 "Name[ca]": "Joshua Goins",
                 "Name[eo]": "Joshua Goins",
@@ -30,6 +31,7 @@
         ],
         "Category": "Utilities",
         "Description": "Loads most model files",
+        "Description[ar]": "يحمل معظم ملفات النماذج",
         "Description[ca@valencia]": "Carrega la majoria de fitxers de models",
         "Description[ca]": "Carrega la majoria de fitxers de models",
         "Description[eo]": "Ŝargas plimulton de modeldosieroj",
@@ -55,6 +57,7 @@
         "Description[zh_TW]": "能夠載入大部分的模型檔案",
         "License": "LGPL",
         "Name": "Assimp",
+        "Name[ar]": "Assimp",
         "Name[ca@valencia]": "Assimp",
         "Name[ca]": "Assimp",
         "Name[eo]": "Assimp",
