@@ -1,0 +1,120 @@
+# Copyright (C) 2025 This file is copyright:
+# This file is distributed under the same license as the konvex package.
+# SPDX-FileCopyrightText: 2025 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: konvex\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-12-26 00:39+0000\n"
+"PO-Revision-Date: 2025-05-10 18:08+0400\n"
+"Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
+"Language-Team: ar\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Lokalize 23.08.5\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "زايد السعيدي"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "zayed.alsaidi@gmail.com"
+
+#: src/main.cpp:31
+#, kde-format
+msgid "Konvex"
+msgstr "محدب"
+
+#: src/main.cpp:33
+#, kde-format
+msgid "3D Model Viewer"
+msgstr "عارض النماذج ثلاثية الأبعاد"
+
+#: src/main.cpp:35
+#, kde-format
+msgid "© 2023 Joshua Goins"
+msgstr "© 2023 جوشوا جوينز"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "Joshua Goins"
+msgstr "جوشوا جوينز"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "Maintainer"
+msgstr "الصائن"
+
+#: src/main.cpp:46
+#, kde-format
+msgctxt "Application Description"
+msgid "3D Model Viewer"
+msgstr "عارض النماذج ثلاثية الأبعاد"
+
+#: src/main.cpp:47
+#, kde-format
+msgctxt "@info:shell"
+msgid "Model file"
+msgstr "ملف النموذج"
+
+#: src/ui/Main.qml:22
+#, kde-format
+msgctxt "@title:window Main window"
+msgid "Konvex"
+msgstr "محدب"
+
+#: src/ui/Main.qml:60
+#, kde-format
+msgctxt "@action:intoolbar Re-center the model so it's visible in the viewport"
+msgid "Re-center"
+msgstr "أعد التوسيط"
+
+#: src/ui/Main.qml:65
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "Settings"
+msgstr "إعدادات"
+
+#: src/ui/Main.qml:73
+#, kde-format
+msgctxt "@info:placeholder Viewport placeholder, when no model was loaded"
+msgid "No model loaded"
+msgstr "لم يحمل أي نموذج"
+
+#: src/ui/Main.qml:74
+#, kde-format
+msgctxt "@info:placeholder Viewport placeholder, when no model was loaded"
+msgid "Open a model with Konvex, or drag a model into this window."
+msgstr "افتح نموذجًا باستخدام محدب، أو اسحب نموذجًا إلى هذه النافذة."
+
+#: src/ui/Main.qml:77
+#, kde-format
+msgctxt "@action:button"
+msgid "Select File"
+msgstr "اختر ملفًّا"
+
+#: src/ui/SettingsPage.qml:15
+#, kde-format
+msgctxt "@title:window"
+msgid "Settings"
+msgstr "إعدادات"
+
+#: src/ui/SettingsPage.qml:33
+#, kde-format
+msgctxt "@action:button"
+msgid "About Konvex"
+msgstr "حول محدب"
+
+#: src/ui/SettingsPage.qml:42
+#, kde-format
+msgctxt "@action:button"
+msgid "About KDE"
+msgstr "حول كيدي"
