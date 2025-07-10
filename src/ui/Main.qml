@@ -36,7 +36,6 @@ Kirigami.ApplicationWindow {
         }
     }
 
-    color: "transparent"
 
     background: Rectangle {
         color: currentlyLoadedFile.length === 0 ? Kirigami.Theme.backgroundColor : "transparent"
