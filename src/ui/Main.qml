@@ -59,7 +59,7 @@ Kirigami.ApplicationWindow {
             Kirigami.Action {
                 text: i18nc("@action:intoolbar Re-center the model so it's visible in the viewport", "Re-center")
                 icon.name: "snap-bounding-box-center"
-                onTriggered: mainCamera.viewAll()
+                onTriggered:  view3D.adjustCamera()
             },
             Kirigami.Action {
                 text: i18nc("@action:intoolbar", "Settings")
@@ -83,8 +83,27 @@ Kirigami.ApplicationWindow {
         }
 
         View3D {
+            id: view3D
             anchors.fill: parent
             visible: model.geometry
+
+            function adjustCamera() {
+                if (!model.geometry) return;
+
+                const center = model.boundsCenter;
+                const extents = model.boundsExtents;
+
+                const radius = Math.max(extents.x, extents.y, extents.z) * 0.5;
+
+                const aspectRatio = view3D.width / view3D.height;
+                const verticalFov = mainCamera.fieldOfView * Math.PI / 180;
+                const zoomFactor = 1.5;
+                const distance = radius / Math.tan(verticalFov * 0.5) * zoomFactor;
+
+                mainCamera.position = Qt.vector3d(center.x, center.y, center.z + distance);
+
+                cameraController.origin.position = Qt.vector3d(0,0,0);
+            }
 
             environment {
                 backgroundMode: SceneEnvironment.Transparent
@@ -105,6 +124,7 @@ Kirigami.ApplicationWindow {
             }
 
             OrbitCameraController {
+                id: cameraController
                 anchors.fill: parent
                 origin: cameraNode
                 camera: mainCamera
@@ -114,6 +134,12 @@ Kirigami.ApplicationWindow {
                 id: model
 
                 geometry: Controller.createGeometry(currentlyLoadedFile, model);
+
+                readonly property bool hasBounds: geometry && !isNaN(geometry.minBound.x)
+                readonly property vector3d boundsMin: hasBounds ? geometry.minBound : Qt.vector3d(0,0,0)
+                readonly property vector3d boundsMax: hasBounds ? geometry.maxBound : Qt.vector3d(0,0,0)
+                readonly property vector3d boundsCenter: hasBounds ? geometry.center : Qt.vector3d(0,0,0)
+                readonly property vector3d boundsExtents: hasBounds ? geometry.extents : Qt.vector3d(0,0,0)
 
                 materials: [
                     PrincipledMaterial {
