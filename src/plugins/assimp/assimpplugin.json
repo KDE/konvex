@@ -26,7 +26,6 @@
                 "Name[sv]": "Joshua Goins",
                 "Name[tr]": "Joshua Goins",
                 "Name[uk]": "Joshua Goins",
-                "Name[x-test]": "xxJoshua Goinsxx",
                 "Name[zh_TW]": "Joshua Goins"
             }
         ],
@@ -55,7 +54,6 @@
         "Description[sv]": "Läser in de flesta modellfiler",
         "Description[tr]": "Çoğu model dosyasını yükleyin",
         "Description[uk]": "Завантаження більшості файлів моделей",
-        "Description[x-test]": "xxLoads most model filesxx",
         "Description[zh_TW]": "能夠載入大部分的模型檔案",
         "License": "LGPL",
         "Name": "Assimp",
@@ -82,7 +80,6 @@
         "Name[sv]": "Assimp",
         "Name[tr]": "Assimp",
         "Name[uk]": "Assimp",
-        "Name[x-test]": "xxAssimpxx",
         "Name[zh_TW]": "Assimp"
     },
     "X-Konvex-SupportedExtensions": [
