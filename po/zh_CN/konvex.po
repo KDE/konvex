@@ -20,100 +20,100 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "KDE 中国,  Eric Zhao"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "kde-china@kde.org, zhaojiale20060708@outlook.com"
 
 #: src/main.cpp:31
 #, kde-format
 msgid "Konvex"
-msgstr ""
+msgstr "Konvex"
 
 #: src/main.cpp:33
 #, kde-format
 msgid "3D Model Viewer"
-msgstr ""
+msgstr "3D 模型查看器"
 
 #: src/main.cpp:35
 #, kde-format
 msgid "© 2023 Joshua Goins"
-msgstr ""
+msgstr "© 2023 Joshua Goins"
 
 #: src/main.cpp:36
 #, kde-format
 msgid "Joshua Goins"
-msgstr ""
+msgstr "Joshua Goins"
 
 #: src/main.cpp:36
 #, kde-format
 msgid "Maintainer"
-msgstr ""
+msgstr "维护人员"
 
 #: src/main.cpp:46
 #, kde-format
 msgctxt "Application Description"
 msgid "3D Model Viewer"
-msgstr ""
+msgstr "3D 模型查看器"
 
 #: src/main.cpp:47
 #, kde-format
 msgctxt "@info:shell"
 msgid "Model file"
-msgstr ""
+msgstr "模型文件"
 
 #: src/ui/Main.qml:22
 #, kde-format
 msgctxt "@title:window Main window"
 msgid "Konvex"
-msgstr ""
+msgstr "Konvex"
 
 #: src/ui/Main.qml:60
 #, kde-format
 msgctxt "@action:intoolbar Re-center the model so it's visible in the viewport"
 msgid "Re-center"
-msgstr ""
+msgstr "重新居中"
 
 #: src/ui/Main.qml:65
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
-msgstr ""
+msgstr "设置"
 
 #: src/ui/Main.qml:73
 #, kde-format
 msgctxt "@info:placeholder Viewport placeholder, when no model was loaded"
 msgid "No model loaded"
-msgstr ""
+msgstr "没有模型被加载"
 
 #: src/ui/Main.qml:74
 #, kde-format
 msgctxt "@info:placeholder Viewport placeholder, when no model was loaded"
 msgid "Open a model with Konvex, or drag a model into this window."
-msgstr ""
+msgstr "用 Konvex 打开一个模型，或者把一个模型拖入这个窗口"
 
 #: src/ui/Main.qml:77
 #, kde-format
 msgctxt "@action:button"
 msgid "Select File"
-msgstr ""
+msgstr "选择文件"
 
 #: src/ui/SettingsPage.qml:15
 #, kde-format
 msgctxt "@title:window"
 msgid "Settings"
-msgstr ""
+msgstr "设置"
 
 #: src/ui/SettingsPage.qml:33
 #, kde-format
 msgctxt "@action:button"
 msgid "About Konvex"
-msgstr ""
+msgstr "关于 Konvex"
 
 #: src/ui/SettingsPage.qml:42
 #, kde-format
 msgctxt "@action:button"
 msgid "About KDE"
-msgstr ""
+msgstr "关于 KDE"
