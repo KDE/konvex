@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konvex\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:50+0000\n"
+"POT-Creation-Date: 2026-01-23 00:41+0000\n"
 "PO-Revision-Date: 2024-12-28 12:12+0100\n"
 "Last-Translator: Valter Mura <valtermura@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -70,31 +70,31 @@ msgctxt "@title:window Main window"
 msgid "Konvex"
 msgstr "Konvex"
 
-#: src/ui/Main.qml:60
+#: src/ui/Main.qml:59
 #, kde-format
 msgctxt "@action:intoolbar Re-center the model so it's visible in the viewport"
 msgid "Re-center"
 msgstr "Centra di nuovo"
 
-#: src/ui/Main.qml:65
+#: src/ui/Main.qml:64
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "Impostazioni"
 
-#: src/ui/Main.qml:73
+#: src/ui/Main.qml:72
 #, kde-format
 msgctxt "@info:placeholder Viewport placeholder, when no model was loaded"
 msgid "No model loaded"
 msgstr "Nessun modello caricato"
 
-#: src/ui/Main.qml:74
+#: src/ui/Main.qml:73
 #, kde-format
 msgctxt "@info:placeholder Viewport placeholder, when no model was loaded"
 msgid "Open a model with Konvex, or drag a model into this window."
 msgstr "Apri un modello con Konvex, oppure trascinalo in questa finestra."
 
-#: src/ui/Main.qml:77
+#: src/ui/Main.qml:76
 #, kde-format
 msgctxt "@action:button"
 msgid "Select File"

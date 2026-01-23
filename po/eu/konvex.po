@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konvex\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:50+0000\n"
+"POT-Creation-Date: 2026-01-23 00:41+0000\n"
 "PO-Revision-Date: 2024-12-26 20:32+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -73,31 +73,31 @@ msgctxt "@title:window Main window"
 msgid "Konvex"
 msgstr "Konvex"
 
-#: src/ui/Main.qml:60
+#: src/ui/Main.qml:59
 #, kde-format
 msgctxt "@action:intoolbar Re-center the model so it's visible in the viewport"
 msgid "Re-center"
 msgstr "Berri erdiratu"
 
-#: src/ui/Main.qml:65
+#: src/ui/Main.qml:64
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "Ezarpenak"
 
-#: src/ui/Main.qml:73
+#: src/ui/Main.qml:72
 #, kde-format
 msgctxt "@info:placeholder Viewport placeholder, when no model was loaded"
 msgid "No model loaded"
 msgstr "Ez da eredurik zamatu"
 
-#: src/ui/Main.qml:74
+#: src/ui/Main.qml:73
 #, kde-format
 msgctxt "@info:placeholder Viewport placeholder, when no model was loaded"
 msgid "Open a model with Konvex, or drag a model into this window."
 msgstr "Ireki eredu bat Konvex erabiliz, edo arrastatu eredu bat leihora."
 
-#: src/ui/Main.qml:77
+#: src/ui/Main.qml:76
 #, kde-format
 msgctxt "@action:button"
 msgid "Select File"
