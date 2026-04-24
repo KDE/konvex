@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: konvex\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-23 00:41+0000\n"
-"PO-Revision-Date: 2024-12-26 00:39+0000\n"
+"PO-Revision-Date: 2026-04-23 21:33+0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: lt\n"
@@ -17,104 +17,105 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
+"X-Generator: Poedit 3.8\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Moo"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "<>"
 
 #: src/main.cpp:31
 #, kde-format
 msgid "Konvex"
-msgstr ""
+msgstr "Konvex"
 
 #: src/main.cpp:33
 #, kde-format
 msgid "3D Model Viewer"
-msgstr ""
+msgstr "3D maketų žiūryklė"
 
 #: src/main.cpp:35
 #, kde-format
 msgid "© 2023 Joshua Goins"
-msgstr ""
+msgstr "© 2023 Joshua Goins"
 
 #: src/main.cpp:36
 #, kde-format
 msgid "Joshua Goins"
-msgstr ""
+msgstr "Joshua Goins"
 
 #: src/main.cpp:36
 #, kde-format
 msgid "Maintainer"
-msgstr ""
+msgstr "Prižiūrėtojas"
 
 #: src/main.cpp:46
 #, kde-format
 msgctxt "Application Description"
 msgid "3D Model Viewer"
-msgstr ""
+msgstr "3D maketų žiūryklė"
 
 #: src/main.cpp:47
 #, kde-format
 msgctxt "@info:shell"
 msgid "Model file"
-msgstr ""
+msgstr "Maketo failas"
 
 #: src/ui/Main.qml:22
 #, kde-format
 msgctxt "@title:window Main window"
 msgid "Konvex"
-msgstr ""
+msgstr "Konvex"
 
 #: src/ui/Main.qml:59
 #, kde-format
 msgctxt "@action:intoolbar Re-center the model so it's visible in the viewport"
 msgid "Re-center"
-msgstr ""
+msgstr "Centruoti iš naujo"
 
 #: src/ui/Main.qml:64
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
-msgstr ""
+msgstr "Nuostatos"
 
 #: src/ui/Main.qml:72
 #, kde-format
 msgctxt "@info:placeholder Viewport placeholder, when no model was loaded"
 msgid "No model loaded"
-msgstr ""
+msgstr "Neįkeltas joks maketas"
 
 #: src/ui/Main.qml:73
 #, kde-format
 msgctxt "@info:placeholder Viewport placeholder, when no model was loaded"
 msgid "Open a model with Konvex, or drag a model into this window."
-msgstr ""
+msgstr "Atverkite maketą naudodami Konvex arba tempkite maketą į šį langą."
 
 #: src/ui/Main.qml:76
 #, kde-format
 msgctxt "@action:button"
 msgid "Select File"
-msgstr ""
+msgstr "Pasirinkti failą"
 
 #: src/ui/SettingsPage.qml:15
 #, kde-format
 msgctxt "@title:window"
 msgid "Settings"
-msgstr ""
+msgstr "Nuostatos"
 
 #: src/ui/SettingsPage.qml:33
 #, kde-format
 msgctxt "@action:button"
 msgid "About Konvex"
-msgstr ""
+msgstr "Apie Konvex"
 
 #: src/ui/SettingsPage.qml:42
 #, kde-format
 msgctxt "@action:button"
 msgid "About KDE"
-msgstr ""
+msgstr "Apie KDE"
