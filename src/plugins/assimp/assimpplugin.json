@@ -31,6 +31,7 @@
                 "Name[sl]": "Joshua Goins",
                 "Name[sv]": "Joshua Goins",
                 "Name[tr]": "Joshua Goins",
+                "Name[ug]": "Joshua Goins",
                 "Name[uk]": "Joshua Goins",
                 "Name[zh_CN]": "Joshua Goins",
                 "Name[zh_TW]": "Joshua Goins"
@@ -66,6 +67,7 @@
         "Description[sl]": "Naloži večino datotek modelov",
         "Description[sv]": "Läser in de flesta modellfiler",
         "Description[tr]": "Çoğu model dosyasını yükleyin",
+        "Description[ug]": "كۆپ قىسىم مودېل ھۆججىتىنى يۈكلىيەلەيدۇ",
         "Description[uk]": "Завантаження більшості файлів моделей",
         "Description[zh_CN]": "加载大多数模型文件",
         "Description[zh_TW]": "能夠載入大部分的模型檔案",
@@ -99,6 +101,7 @@
         "Name[sl]": "Assimp",
         "Name[sv]": "Assimp",
         "Name[tr]": "Assimp",
+        "Name[ug]": "Assimp",
         "Name[uk]": "Assimp",
         "Name[zh_CN]": "Assimp",
         "Name[zh_TW]": "Assimp"
