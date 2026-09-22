@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: konvex\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-23 00:41+0000\n"
-"PO-Revision-Date: 2026-05-31 19:22-0400\n"
+"PO-Revision-Date: 2026-09-22 18:03+0900\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
 "Language: ug\n"
@@ -31,7 +31,7 @@ msgstr "sahranbay@gmail.com, gheyret@gmail.com"
 #: src/main.cpp:31
 #, kde-format
 msgid "Konvex"
-msgstr "Konvex"
+msgstr ""
 
 #: src/main.cpp:33
 #, kde-format
@@ -46,7 +46,7 @@ msgstr ""
 #: src/main.cpp:36
 #, kde-format
 msgid "Joshua Goins"
-msgstr "Joshua Goins"
+msgstr ""
 
 #: src/main.cpp:36
 #, kde-format
@@ -69,7 +69,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window Main window"
 msgid "Konvex"
-msgstr "Konvex"
+msgstr ""
 
 #: src/ui/Main.qml:59
 #, kde-format
