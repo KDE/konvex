@@ -50,7 +50,7 @@ msgstr "Joshua Goins"
 #: src/main.cpp:36
 #, kde-format
 msgid "Maintainer"
-msgstr "维护人员"
+msgstr "维护者"
 
 #: src/main.cpp:46
 #, kde-format
